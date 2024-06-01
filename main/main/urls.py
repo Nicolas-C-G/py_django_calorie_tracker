@@ -20,5 +20,6 @@ from calorieTracker import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name='home')
+    path('', views.index, name='home'),
+    path('delete/<int:id>', views.delete_consume, name='delete'),
 ]
